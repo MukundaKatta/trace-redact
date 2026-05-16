@@ -1,0 +1,18 @@
+[package]
+name = "trace-redact"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "Redact sensitive fields (api keys, tokens, emails, phone numbers) from agent traces before exporting to OTel or a log sink. Zero deps."
+authors = ["Mukunda Rao Katta <mukunda.vjcs6@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/MukundaKatta/trace-redact"
+homepage = "https://github.com/MukundaKatta/trace-redact"
+documentation = "https://docs.rs/trace-redact"
+readme = "README.md"
+keywords = ["trace", "redact", "otel", "pii", "observability"]
+categories = ["text-processing"]
+exclude = [".github/*", "target/*"]
+
+[dependencies]
+serde_json = "1"
